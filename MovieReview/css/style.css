@@ -61,6 +61,21 @@ body{
 
 
 
+.flex-containerreview {
+  display: flex;
+  padding: 100px;
+
+}
+
+.flex-containerreview >div {
+  padding: 100px;
+  width: 80%;
+  height: 80%;
+  text-align: center;
+  background-color: grey;
+  margin: 10px;
+}
+
 
 
 

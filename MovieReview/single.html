@@ -6,6 +6,11 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--star  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="starability-all.min.css">
+
+<!--  -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="css/our_css_layout.css">
@@ -86,27 +91,70 @@
 
 
 
-
   <div class="container">
-    <h1>Movie Title</h1>
-    <h2>Star Rating</h2>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <div class="rating">
-      <span><input type="radio" name="rating" id="str5" value="5"><label for="str5"></label></span>
-      <span><input type="radio" name="rating" id="str4" value="4"><label for="str4"></label></span>
-      <span><input type="radio" name="rating" id="str3" value="3"><label for="str3"></label></span>
-      <span><input type="radio" name="rating" id="str2" value="2"><label for="str2"></label></span>
-      <span><input type="radio" name="rating" id="str1" value="1"><label for="str1"></label></span>
-    </div>
-    <p>Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie
-      description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description
-      here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie
-      description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description
-      here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie
-      description here </p>
+    <div class="flex-container">
+      <div class="">
+        movie image here
+        <!-- to put a movie image, going to use javascript to retrieve image -->
+      </div>
+      <div class="">
 
+
+        <h1>Movie Title</h1>
+        <!-- <p>star rating here</p> -->
+        <div class="star-rating" title="Rated 4.00 out of 5"><span style="width:80%"><strong class="rating">4.00</strong> out of 5</span></div>
+
+
+        <p>Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie
+          description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie
+          description
+          here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here
+          Movie
+          description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie
+          description
+          here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here Movie description here
+          Movie
+          description here </p>
+
+
+      </div>
+    </div>
+
+
+<legend>Reviews</legend>
+<div class="flex-containerreview">
+
+<div class="">
+  <h4>Rating:</h4>
+</div>
+<form>
+  <fieldset class="starability-basic">
+
+
+    <input type="radio" id="rate5" name="rating" value="5" />
+    <label for="rate5" title="Amazing"></label>
+
+    <input type="radio" id="rate4" name="rating" value="4" />
+    <label for="rate4" title="Very good"></label>
+
+    <input type="radio" id="rate3" name="rating" value="3" />
+    <label for="rate3" title="Average"></label>
+
+    <input type="radio" id="rate2" name="rating" value="2" />
+    <label for="rate2" title="Not good"></label>
+
+    <input type="radio" id="rate1" name="rating" value="1" />
+    <label for="rate1" title="Terrible"></label>
+  </fieldset>
+</form>
+
+</div>
+
+<p>Username (Guest):</p>
+<p>Leave a Review:</p>
 
   </div>
+
 
 
 

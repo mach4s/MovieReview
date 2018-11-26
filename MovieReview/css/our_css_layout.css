@@ -1,25 +1,19 @@
-body{
-
-
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/moviebg2.png);
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/moviebg2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-
   /* filter: blur(8px);
   -webkit-filter: blur(8px); */
-
 }
 
 .bgimg {
-
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../img/moviebg2.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/moviebg2.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-
   filter: blur(8px);
   -webkit-filter: blur(8px);
 }
@@ -32,8 +26,10 @@ body{
 }
 
 .bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/opacity/see-through */
   color: white;
   font-weight: bold;
   border: 3px solid #f1f1f1;
@@ -45,32 +41,27 @@ body{
   width: 80%;
   padding: 20px;
   text-align: center;
-
-
 }
 
-.flex-container  {
+.flex-container {
   display: flex;
   flex-wrap: nowrap;
   align-items: stretch;
-
 }
- .flex-container > div {
+
+.flex-container>div {
   border: 1px solid #f1f1f1;
   padding: 5px;
   background-color: white;
   width: 80%;
 }
 
-
-
 .flex-containerreview {
   display: flex;
   padding: 50px;
-
 }
 
-.flex-containerreview >div {
+.flex-containerreview>div {
   padding: 50px;
   width: 80%;
   height: 80%;
@@ -79,19 +70,15 @@ body{
   margin: 10px;
 }
 
-
 .container {
   padding: 10px;
-  width: 80%;
+  width: 95%;
   height: 80%;
   text-align: left;
   background-color: white;
-  margin: 10px;
+  /* margin: 10px; */
   border-color: grey;
 }
-
-
-
 
 /* background animation */
 .wrapper {
@@ -105,7 +92,6 @@ body{
   width: 5076px;
   /* animation: slide 60s linear infinite; */
   /* Add the blur effect */
-
   filter: blur(8px);
   -webkit-filter: blur(8px);
   /* background-color: rgba(0, 0, 0, 0.5); */
@@ -122,20 +108,57 @@ body{
 }
 
 /* end animation */
-
-
 .movie-list {
   margin: 0 -15px;
   /* width: 80%; */
 }
 
-  .movie-list .movie {
-    width: 25%;
-    padding: 0 15px;
-    float: left;
-    margin: 10px;
-    margin-bottom: 30px; }
+.movie-list .movie {
+  width: 25%;
+  padding: 0 15px;
+  float: left;
+  /* margin: 10px; */
+  margin-bottom: 50px;
+}
 
+.movie-list .movie .movie-poster {
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  border: 1px solid transparent;
+}
+
+.movie-list .movie .movie-poster img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.movie-list .movie:hover img {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.movie-list .movie .movie-title {
+  font-size: 24px;
+  font-size: 1.6em;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.movie-list .movie .movie-title a {
+  color: #84878d;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.movie-list .movie .movie-title a:hover {
+  color: #ffaa3c;
+}
 
 #top10 {
   color: white;
@@ -143,169 +166,186 @@ body{
   font-size: 15px;
 }
 
+/* TOP 10 PAGE */
+/* body {font-family: Arial, Helvetica, sans-serif;} */
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
 
-  /* TOP 10 PAGE */
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  float: right;
+}
 
+button:hover {
+  opacity: 0.8;
+}
 
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  float: left;
+}
 
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
 
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
 
-  /* body {font-family: Arial, Helvetica, sans-serif;} */
+.container {
+  padding: 16px;
+}
 
-  /* Full-width input fields */
-  input[type=text], input[type=password] {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
   }
 
-  /* Set a style for all buttons */
-  button {
-      background-color: #4CAF50;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-      float: right;
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
   }
 
-  button:hover {
-      opacity: 0.8;
+  to {
+    transform: scale(1)
   }
+}
 
-  /* Extra styles for the cancel button */
-  .cancelbtn {
-      width: auto;
-      padding: 10px 18px;
-      background-color: #f44336;
-      float: left;
-  }
-
-  /* Center the image and position the close button */
-  .imgcontainer {
-      text-align: center;
-      margin: 24px 0 12px 0;
-      position: relative;
-  }
-
-  img.avatar {
-      width: 40%;
-      border-radius: 50%;
-  }
-
-  .container {
-      padding: 16px;
-  }
-
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
   span.psw {
-      float: right;
-      padding-top: 16px;
+    display: block;
+    float: none;
   }
 
-  /* The Modal (background) */
-  .modal {
-      display: none; /* Hidden by default */
-      position: fixed; /* Stay in place */
-      z-index: 1; /* Sit on top */
-      left: 0;
-      top: 0;
-      width: 100%; /* Full width */
-      height: 100%; /* Full height */
-      overflow: auto; /* Enable scroll if needed */
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-      padding-top: 60px;
+  .cancelbtn {
+    width: 100%;
   }
-
-  /* Modal Content/Box */
-  .modal-content {
-      background-color: #fefefe;
-      margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-      border: 1px solid #888;
-      width: 80%; /* Could be more or less, depending on screen size */
-  }
-
-  /* The Close Button (x) */
-  .close {
-      position: absolute;
-      right: 25px;
-      top: 0;
-      color: #000;
-      font-size: 35px;
-      font-weight: bold;
-  }
-
-  .close:hover,
-  .close:focus {
-      color: red;
-      cursor: pointer;
-  }
-
-  /* Add Zoom Animation */
-  .animate {
-      -webkit-animation: animatezoom 0.6s;
-      animation: animatezoom 0.6s
-  }
-
-  @-webkit-keyframes animatezoom {
-      from {-webkit-transform: scale(0)}
-      to {-webkit-transform: scale(1)}
-  }
-
-  @keyframes animatezoom {
-      from {transform: scale(0)}
-      to {transform: scale(1)}
-  }
-
-  /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
-      span.psw {
-         display: block;
-         float: none;
-      }
-      .cancelbtn {
-         width: 100%;
-      }
-  }
-
-
-
+}
 
 /*  star rating stuff*/
-
 .rating {
-    float:left;
-    width:300px;
+  float: left;
+  width: 300px;
 }
-.rating span { float:right; position:relative; }
+
+.rating span {
+  float: right;
+  position: relative;
+}
+
 .rating span input {
-    position:absolute;
-    top:0px;
-    left:0px;
-    opacity:0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
 }
+
 .rating span label {
-    display:inline-block;
-    width:30px;
-    height:30px;
-    text-align:center;
-    color:#FFF;
-    background:#ccc;
-    font-size:30px;
-    margin-right:2px;
-    line-height:30px;
-    border-radius:50%;
-    -webkit-border-radius:50%;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #FFF;
+  background: #ccc;
+  font-size: 30px;
+  margin-right: 2px;
+  line-height: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
 }
-.rating span:hover ~ span label,
+
+.rating span:hover~span label,
 .rating span:hover label,
 .rating span.checked label,
-.rating span.checked ~ span label {
-    background:#F90;
-    color:#FFF;
+.rating span.checked~span label {
+  background: #F90;
+  color: #FFF;
 }

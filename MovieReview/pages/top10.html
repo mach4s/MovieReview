@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Movie Review Top 10</title>
+  </head>
+  <link rel="stylesheet" href="../css/our_css_layout.css">
+  <body>
+
+
+
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../homepage.html">Movie Review</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="../homepage.html">Home</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Genres <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="../pages/genre_romance.html">Romance</a></li>
+                  <li><a href="../pages/genre_action.html">Action</a></li>
+                  <li><a href="../pages/genre_sci-fi.html">Sci-Fi</a></li>
+                  <li><a href="../genre.html">Saliya's Genre Page</a></li>
+                </ul>
+              </li>
+              <li><a href="top10.html">Top 10</a></li>
+            </ul>
+            <!-- <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul> -->
+
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+            <div id="id01" class="modal">
+
+              <form class="modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <img src="../img/user.jpg" alt="Avatar" class="avatar" style="width:100px;height:100px;">
+                </div>
+
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <span class="psw"><a href="#">Forgot password?</a></span>
+                </div>
+              </form>
+            </div>
+
+
+          </div>
+        </div>
+      </nav>
+
+<p id="top10"> Top 10 Movies of This Week </p>
+
+  <div class="container">
+    <div class="flex-container">
+        <div style="flex-grow: 1">
+          <img src="../img/MovieImgs/creed2.jpg" alt="Creed II" style="width:225px;height:300px;">
+        </div>
+        <div style="flex-grow: 8">
+          <b>Creed II</b><br>Under the tutelage of Rocky Balboa, newly crowned light heavyweight champion Adonis Creed
+          faces off against Viktor Drago, the son of Ivan Drago.<br>
+          <br>Cast:<br>Tessa Thompson<br>Michael B. Jordan<br>Sylvester Stallone<br>Dolph Lundgren
+        </div>
+    </div>
+
+    </div>
+      <div class="container">
+        <div class="flex-container">
+            <div style="flex-grow: 1">
+              <img src="../img/MovieImgs/ralph2.jpg" alt="Ralph Breaks the Internet" style="width:225px;height:300px;">
+            </div>
+            <div style="flex-grow: 8">
+              <b>Ralph Breaks the Internet</b><br>Six years after the events of "Wreck-It Ralph,"
+               Ralph and Vanellope, now friends, discover a wi-fi router in their arcade, leading
+               them into a new adventure.<br>
+              <br>Cast:<br>John C. Reilly<br>Sarah Silverman<br>Mandy Moore<br>Kristen Bell
+            </div>
+        </div>
+
+    </div>
+      <div class="container">
+        <div class="flex-container">
+            <div style="flex-grow: 1">
+              <img src="../img/MovieImgs/robinhood.jpg" alt="Robin Hood" style="width:225px;height:300px;">
+            </div>
+            <div style="flex-grow: 8">
+              <b>Robin Hood</b><br>Robin of Loxley (Taron Egerton) a war-hardened Crusader and his Moorish
+               commander (Jamie Foxx) mount an audacious revolt against the corrupt English crown in a
+                thrilling action-adventure packed with gritty battlefield exploits, mind-blowing fight
+                 choreography, and a timeless romance.<br>
+              <br>Cast:<br>Taron Egerton<br>Jamie Dornan<br>Paul Anderson<br>Ben Mendelsohn
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+      <div class="flex-container">
+          <div style="flex-grow: 1">
+            <img src="../img/MovieImgs/fantastic.jpg" alt="Fantastic Beasts 2" style="width:225px;height:300px;">
+          </div>
+          <div style="flex-grow: 8">
+            <b>Fantastic Beasts The Crimes of Grindelwald</b><br>The second installment of the "Fantastic Beasts
+             and Where to Find Them" franchise which follows the adventures of Newt Scamander.<br>
+            <br>Cast:<br>Eddie Redmayne<br>Katherine Waterston<br>Dan Fogler<br>Alison Sudol
+          </div>
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="flex-container">
+          <div style="flex-grow: 1">
+            <img src="../img/MovieImgs/spidersweb.jpg" alt="Girl in Spider's Web" style="width:225px;height:300px;">
+          </div>
+          <div style="flex-grow: 8">
+            <b>The Girl in the Spider's Web</b><br>Young computer hacker Lisbeth Salander and journalist Mikael
+            Blomkvist find themselves caught in a web of spies, cybercriminals and corrupt government officials.<br>
+            <br>Cast:<br>Claire Foy<br>Sylvia Hoeks<br>Lakeith Stanfield<br>Sverrir Gudnason
+          </div>
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="flex-container">
+          <div style="flex-grow: 1">
+            <img src="../img/MovieImgs/overlord.jpg" alt="Overlord" style="width:225px;height:300px;">
+          </div>
+          <div style="flex-grow: 8">
+            <b>Overlord</b><br>On the eve of D-Day, American paratroopers are dropped behind enemy
+             lines to carry out a mission crucial to the invasion's success. But as they approach
+             their target, they begin to realize there is more going on in this Nazi-occupied village
+              than a simple military operation. They find themselves fighting against supernatural forces,
+               part of a Nazi experiment.<br>
+            <br>Cast:<br>John Magaro<br>Wyatt Russell<br>Pilou Asbæk<br>Bokeem Woodbine
+          </div>
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="flex-container">
+          <div style="flex-grow: 1">
+            <img src="../img/MovieImgs/grinch.jpg" alt="The Grinch" style="width:225px;height:300px;">
+          </div>
+          <div style="flex-grow: 8">
+            <b>Dr. Seuss' The Grinch</b><br>A cynical grump goes on a mission to steal Christmas,
+            only to have his heart changed by a young girl’s generous holiday spirit. Funny,
+            heartwarming and visually stunning, it’s a universal story about the spirit of Christmas
+             and the indomitable power of optimism.
+            <br>
+            <br>Cast:<br>Benedict Cumberbatch<br>Rashida Jones<br>Angela Lansbury<br>Kenan Thompson
+          </div>
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="flex-container">
+          <div style="flex-grow: 1">
+            <img src="../img/MovieImgs/bohemian.jpg" alt="Bohemian Rhapsody" style="width:225px;height:300px;">
+          </div>
+          <div style="flex-grow: 8">
+            <b>Bohemain Rhapsody</b><br>Freddie Mercury defied stereotypes and shattered convention to become
+             one of the most beloved entertainers on the planet. The film traces the meteoric rise of the band Queen
+              through their iconic songs and revolutionary sound.
+            <br>
+            <br>Cast:<br>Rami Malek<br>Mike Myers<br>Joseph Mazzello<br>Ben Hardy
+          </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+  </body>
+</html>

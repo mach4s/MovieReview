@@ -194,6 +194,7 @@ button:hover {
   opacity: 0.8;
 }
 
+<<<<<<< HEAD
 /* Extra styles for the cancel button */
 .cancelbtn {
   width: auto;
@@ -201,6 +202,19 @@ button:hover {
   background-color: #f44336;
   float: left;
 }
+=======
+  /* Set a style for all buttons */
+  button {
+      background-color: #bfbfbf;
+      color:black;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      float: right;
+  }
+>>>>>>> 54ac775f0d85cb0b9d6bbdb3e0c8ecfcde921e63
 
 /* Center the image and position the close button */
 .imgcontainer {
@@ -209,10 +223,20 @@ button:hover {
   position: relative;
 }
 
+<<<<<<< HEAD
 img.avatar {
   width: 40%;
   border-radius: 50%;
 }
+=======
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #bfbfbf;
+      float: left;
+  }
+>>>>>>> 54ac775f0d85cb0b9d6bbdb3e0c8ecfcde921e63
 
 .container {
   padding: 16px;

@@ -29,7 +29,7 @@ window.onclick = function(event) {
 /*This Script allows people to enter by using a form that asks for a
 UserID and Password*/
 function pasuser(form) {
-  
+
 if (form.uname.value=="JavaScript") {
 if (form.psw.value=="Kit") {
 location="page2.html"
@@ -39,3 +39,21 @@ alert("Invalid Password")
 } else {  alert("Invalid UserID")
 }
 }
+
+
+//Star Rating
+$(document).ready(function(){
+    // Check Radio-box
+    $(".rating input:radio").attr("checked", false);
+
+    $('.rating input').click(function () {
+        $(".rating span").removeClass('checked');
+        $(this).parent().addClass('checked');
+    });
+
+    $('input:radio').change(
+      function(){
+        var userRating = this.value;
+        alert(userRating);
+    });
+});

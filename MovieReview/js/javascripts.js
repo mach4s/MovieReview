@@ -12,3 +12,15 @@ $(function() {
   // When the window resizes, or the `.box` moves/resizes, recall the `render` function.
   $(window).resize(render);
 });
+
+// LOGIN STUFF
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+// LOGIN STUFF

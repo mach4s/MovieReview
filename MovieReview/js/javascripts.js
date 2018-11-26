@@ -15,7 +15,7 @@ $(function() {
 
 // LOGIN STUFF
 // Get the modal
-var modal = document.getElementById('id01');
+/*var modal = document.getElementById('id01');
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -23,4 +23,19 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+*/
 // LOGIN STUFF
+
+/*This Script allows people to enter by using a form that asks for a
+UserID and Password*/
+function pasuser(form) {
+  
+if (form.uname.value=="JavaScript") {
+if (form.psw.value=="Kit") {
+location="page2.html"
+} else {
+alert("Invalid Password")
+}
+} else {  alert("Invalid UserID")
+}
+}

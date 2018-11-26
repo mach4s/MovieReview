@@ -164,8 +164,8 @@ body{
 
   /* Set a style for all buttons */
   button {
-      background-color: #4CAF50;
-      color: white;
+      background-color: #bfbfbf;
+      color:black;
       padding: 14px 20px;
       margin: 8px 0;
       border: none;
@@ -182,7 +182,7 @@ body{
   .cancelbtn {
       width: auto;
       padding: 10px 18px;
-      background-color: #f44336;
+      background-color: #bfbfbf;
       float: left;
   }
 

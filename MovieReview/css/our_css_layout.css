@@ -158,7 +158,7 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #4CAF50;
+  background-color: #bfbfbf;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -172,7 +172,7 @@ button:hover {
   opacity: 0.8;
 }
 
-<<<<<<< HEAD
+/*<<<<<<< HEAD   */
 /* Extra styles for the cancel button */
 .cancelbtn {
   width: auto;
@@ -180,7 +180,7 @@ button:hover {
   background-color: #f44336;
   float: left;
 }
-=======
+/*======= */
   /* Set a style for all buttons */
   button {
       background-color: #bfbfbf;
@@ -192,7 +192,7 @@ button:hover {
       width: 100%;
       float: right;
   }
->>>>>>> 54ac775f0d85cb0b9d6bbdb3e0c8ecfcde921e63
+/*>>>>>>> 54ac775f0d85cb0b9d6bbdb3e0c8ecfcde921e63 */
 
 /* Center the image and position the close button */
 .imgcontainer {
@@ -201,12 +201,12 @@ button:hover {
   position: relative;
 }
 
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
 img.avatar {
   width: 40%;
   border-radius: 50%;
 }
-=======
+/*======= */
   /* Extra styles for the cancel button */
   .cancelbtn {
       width: auto;
@@ -214,7 +214,7 @@ img.avatar {
       background-color: #bfbfbf;
       float: left;
   }
->>>>>>> 54ac775f0d85cb0b9d6bbdb3e0c8ecfcde921e63
+/*>>>>>>> 54ac775f0d85cb0b9d6bbdb3e0c8ecfcde921e63 */
 
 .container {
   padding: 16px;

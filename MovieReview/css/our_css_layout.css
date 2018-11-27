@@ -481,7 +481,7 @@ flex-wrap: nowrap;
     -moz-user-select: text !important;
     margin-bottom: 10px;
     font-family: "Arial", Times, Arial, sans-serif !important;
-  border-right:  solid 5px #118C4E;
+  /* border-right:  solid 5px #118C4E; */
 }
 
 $global-baseline: 12px;
@@ -511,6 +511,7 @@ $global-baseline: 12px;
   &__body {
     display: flex; display: -webkit-flex;
     flex-direction: column; -webkit-flex-direction: column;
+    
   }
 }
 

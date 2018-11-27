@@ -1,0 +1,25 @@
+#genreHeader {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.searchWord {
+  color: white;
+}
+.searchBar{
+  float: right;
+  right: -50px;
+}
+
+.pagination {
+    display: inline-block;
+    float: right;
+}
+
+.pagination a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}

@@ -420,6 +420,9 @@ span.psw {
 display: flex;
 flex-wrap: nowrap;
 }
+a  {
+  color: white;
+}
 
 .footercontainer >div {
   text-align: left;

@@ -59,7 +59,7 @@ footer {
   padding: 5px;
   background-color: white;
   /* width: 80%; */
-  padding:30px;
+  /* padding:30px; */
 }
 
 .flex-containerreview {
@@ -71,7 +71,7 @@ padding: 50px;
   text-align: left;
   background-color: white;
   /* margin: 10px; */
-  margin-right: 50px;
+  /* margin-right: 50px; */
   width: 80%;
 }
 
@@ -528,7 +528,7 @@ $global-baseline: 12px;
     font-size: 8;
     color: red;
     font-family: "Arial", Times, Arial, sans-serif !important;
-  
+
 }
 .comment-profile-pic{
  top:0;

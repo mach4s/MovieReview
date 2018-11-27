@@ -28,6 +28,7 @@ window.onclick = function(event) {
 
 /*This Script allows people to enter by using a form that asks for a
 UserID and Password*/
+/*
 function pasuser(form) {
 
 if (form.uname.value=="JavaScript") {
@@ -40,7 +41,7 @@ alert("Invalid Password")
 }
 }
 
-
+*/
 //Star Rating
 $(document).ready(function(){
     // Check Radio-box

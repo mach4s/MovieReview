@@ -177,21 +177,11 @@ button:hover {
 .cancelbtn {
   width: auto;
   padding: 10px 18px;
-  background-color: #f44336;
+  background-color: #bfbfbf;
   float: left;
 }
 /*======= */
-  /* Set a style for all buttons */
-  button {
-      background-color: #bfbfbf;
-      color:black;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-      float: right;
-  }
+
 /*>>>>>>> 54ac775f0d85cb0b9d6bbdb3e0c8ecfcde921e63 */
 
 /* Center the image and position the close button */
@@ -207,13 +197,6 @@ img.avatar {
   border-radius: 50%;
 }
 /*======= */
-  /* Extra styles for the cancel button */
-  .cancelbtn {
-      width: auto;
-      padding: 10px 18px;
-      background-color: #bfbfbf;
-      float: left;
-  }
 /*>>>>>>> 54ac775f0d85cb0b9d6bbdb3e0c8ecfcde921e63 */
 
 .container {
@@ -227,35 +210,25 @@ span.psw {
 
 /* The Modal (background) */
 .modal {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
+  display: none; /* Hidden by default */
+  position: fixed;  /* Stay in place */
+  z-index: 1;   /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0);
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
+  width: 100%;  /* Full width */
+  height: 100%;   /* Full height */
+  overflow: auto;  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);  /* Black w/ opacity */
   padding-top: 60px;
 }
 
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto 15% auto;
-  /* 5% from the top, 15% from the bottom and centered */
+  margin: 5% auto 15% auto;  /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  width: 80%;
-  /* Could be more or less, depending on screen size */
+  width: 80%;  /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button (x) */
@@ -281,13 +254,9 @@ span.psw {
 }
 
 @-webkit-keyframes animatezoom {
-  from {
-    -webkit-transform: scale(0)
-  }
+  from {    -webkit-transform: scale(0)  }
 
-  to {
-    -webkit-transform: scale(1)
-  }
+  to {    -webkit-transform: scale(1)  }
 }
 
 @keyframes animatezoom {
@@ -315,6 +284,7 @@ span.psw {
 /*  star*/
 
 /* Star rating style */
+
 .star-rating {
   display: inline-block;
   overflow: hidden;
@@ -350,7 +320,7 @@ span.psw {
   color: #ffaa3c; }
 
   /* star rating input */
-  input {
+  .starInput {
   border: 0;
   width: 1px;
   height: 1px;
@@ -361,13 +331,13 @@ span.psw {
   opacity: 0;
 }
 
-label {
+.starLabel {
   position: relative;
   float: right;
   color: #C8C8C8;
 }
 
-label:before {
+.starlabel:before {
   margin: 5px;
   content: "\f005";
   font-family: FontAwesome;
@@ -379,16 +349,16 @@ label:before {
   user-select: none;
 }
 
-input:checked ~ label:before {
+.starInput:checked ~ label:before {
   color: #FFC107;
 }
 
-label:hover ~ label:before {
+.starLabel:hover ~ label:before {
   color: #ffdb70;
 }
 
-label:hover:before {
+.starLabel:hover:before {
   color: #FFC107;
 }
-
+                                
 /* input text box */

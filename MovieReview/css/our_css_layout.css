@@ -8,6 +8,19 @@ body {
   -webkit-filter: blur(8px); */
 }
 
+footer {
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background-color: #202020;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 100px;
+}
+
 
 .center {
   margin: auto;
@@ -17,10 +30,10 @@ body {
 }
 
 .bg-text {
-  background-color: rgb(0, 0, 0);
+  /* background-color: rgb(0, 0, 0); */
   /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/opacity/see-through */
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  /* Black w/opacity/see-through  */
   color: white;
   font-weight: bold;
   border: 3px solid #f1f1f1;
@@ -28,10 +41,11 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  /* z-index: 2; */
   width: 80%;
   padding: 20px;
   text-align: center;
+
 }
 
 .flex-container {
@@ -44,7 +58,8 @@ body {
   border: 1px solid #f1f1f1;
   padding: 5px;
   background-color: white;
-  width: 80%;
+  /* width: 80%; */
+  padding:30px;
 }
 
 .flex-containerreview {
@@ -52,17 +67,37 @@ body {
 }
 
 .flex-containerreview>div {
-
+padding: 50px;
   text-align: left;
   background-color: white;
   /* margin: 10px; */
   margin-right: 50px;
+  width: 80%;
 }
 
+.flex-v {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 .container {
+   border-radius: 25px;
   padding: 30px;
   width: 80%;
   height: 80%;
+  text-align: left;
+  background-color: white;
+  /* margin: 10px; */
+  border-color: grey;
+  margin-top: 100px;
+}
+
+.header-container {
+  padding: 10px;
+  width: 80%;
+  /* height: 80%; */
   text-align: left;
   background-color: white;
   /* margin: 10px; */
@@ -360,5 +395,145 @@ span.psw {
 .starLabel:hover:before {
   color: #FFC107;
 }
-                                
+
 /* input text box */
+
+
+/*  footer*/
+/* .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 150px;
+   background-color: #202020;
+   color: white;
+   text-align: center;
+   padding: 30px;
+   margin-top: 100px;
+} */
+
+.footercontainer {
+display: flex;
+flex-wrap: nowrap;
+}
+
+.footercontainer >div {
+  text-align: left;
+  margin: 10px;
+  position: fixed;
+}
+
+
+/* single movie tabs  */
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+
+/* comment */
+@import "compass/css3";
+
+.vjs-comment-list {
+    list-style-type: none;
+    position: relative;
+    background: #fff;
+    font-size: 3;
+    position: relative;
+    /* max-width: 350px; */
+    width: 90%;
+    -moz-user-select: text !important;
+    margin-bottom: 10px;
+    font-family: "Times New Roman", Times, Arial, sans-serif !important;
+  border-right:  solid 5px #118C4E;
+}
+
+$global-baseline: 12px;
+
+%cf {
+  &:after{
+    content:"";
+    display:table;
+    clear:both;
+  }
+}
+
+.l-media {
+  @extend %cf;
+
+  &__figure {
+    float: left;
+    margin-right: $global-baseline * 2;
+
+    .l-media--rev & {
+      float: right;
+      margin-right: 0;
+      margin-left: $global-baseline * 2;
+    }
+  }
+
+  &__body {
+    display: flex; display: -webkit-flex;
+    flex-direction: column; -webkit-flex-direction: column;
+  }
+}
+
+.comment-user-name{
+
+  top:0;
+  left:80px;
+  font-size: 10;
+  font-family: "Times New Roman", Times, Arial, sans-serif !important;
+  font-weight: bold;
+
+}
+
+.comment-id {
+    top: 0;
+    left: 100px;
+    font-size: 8;
+    color: red;
+    font-family: "Times New Roman", Times, Arial, sans-serif !important;
+}
+.comment-profile-pic{
+ top:0;
+ left:0;
+width: 48px;
+height: 48px;
+background-repeat: no-repeat;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAJdEVYdENvbW1lbnQAKlKRRNAAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuNWWFMmUAAAK3SURBVFhH3ZgJb9pAEIX5/3+rIQlRSSA0DS6HD4wxxgZjbrBNJ8m2QUOzzHNKhfr0JCQ0xyfbu+tx6eqreVH+f4Gu762G4Zm90B8lrj8pVy0WIPRngW4erB/WaBzP0yzb/1L1W4+FyV0c6K7u9P04TVNFcaCOE345ihe6CBDdDtON0vT9khzLD6Z0E1mixDBQpW5PZ0vVVqtkvrqr2yz9pDGgm5q9WG1UQ4Eo+PYBY8KA/DBRrcQaBAkrojcAVKnZWZ6rPmJRym0NuEgA0HPHV01AfW/7rJTGABBteqoDqG4vYqU0BoCcwVh1AOV4E1ZKYwTIm6gOoBwvZqU0BoAsN1IdQFEiK6UxANR2RqoDqLYTsFIaA0BGd6g6gDK65wF6ahVb9vlTa8BKaQwAmW7BZW+eY9nTbpvv4W36TZQo36yBK7T706uPRLs0u6ryah8ZAEpmK9UB1HS+ZKU0BoCG4Ux1ADUMgQMfAGpZwcvzgKtljVgpjQEg8iQRvSseKk4WrIjeGJDjweer7Y1ZEb0xoMemp/qI9Wh4rIjeGBDNG5vtTrUSiIKvxQv+zRgQ2e4DZ77dx+4XGQaiaUs4eFBYgdEMBiIPglj11IrCWKLERYCCSLRDUhhLlLgIUCzbjSiMJUpcBGi12aqeWq3WW5YoMQzUsUe5bFykMApm6SeNAZXvTWh4zfLsvPtQ7bmvWkmVUworojcG5PqiBX8odwBMiWQpEB1J4+lCNQE1jheULvymdgKIDq9mZ5jMC74rHoqKUKnyqUfqQ6BK3TbdaL0BjlKJ1pstDbKVusPa/fYRUNVsGB5tsgU+BcmVZXkQJQ1jcPzy/w5Ek0q3Fy2RL3afF7Xr9sLDIekF6LZu0/I5/ND8j0WtCaDyilVqdvzdruDA9XdFGPTUl2iHV39chkrq92J0YUD7/U+iVfd1XLZ9HgAAAABJRU5ErkJggg==);
+}

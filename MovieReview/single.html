@@ -289,13 +289,23 @@ Zaki Hasan
   </div>
 </div> -->
 
+<p id="demo"></p>
 <p>Username (Guest):</p>
-<input type="text" name="username" style="width:500px;">
+<input type="text" name="username" id="user1" style="width:500px;">
 
 <p>Leave a Review:</p>
-<textarea rows = "7" cols = "161" name="guestReview">
+<textarea rows = "7" cols = "161" name="guestReview" id="review1">
 </textarea>
-<button type="button" name="button">Submit</button>
+<button type="button" name="button" onclick="myFunction()">Submit</button>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("user1").value;
+  var y = document.getElementById("review1").value;
+  document.getElementById("demo").innerHTML = "<b>"+ x + "</b>" + "<br>" +  y;
+}
+</script>
+
   </div>
 
 

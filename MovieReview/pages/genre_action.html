@@ -35,49 +35,20 @@
           <li ><a href="../homepage.html">Home</a></li>
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="../genre.html">Genres <span class="caret"></span></a>
-            <ul class="dropdown-menu">
+            <ul  class="dropdown-menu">
               <li><a href="genre_romance.html">Romance</a></li>
               <li class="active"><a href="genre_action.html">Action</a></li>
-              <li><a href="genre_sci-fi.html">Sci-Fi</a></li>
-              <li><a href="../genre.html">Thriller</a></li>
+              <li ><a href="genre_sci-fi.html">Sci-Fi</a></li>
+              <!-- <li><a href="../genre.html">Saliya's Genre Page</a></li> -->
             </ul>
           </li>
-          <li><a href="top10.html">Top 10</a></li>
+          <li><a href="search.html">Search</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
-        <!-- <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right">
               <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
               <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul> -->
-
-        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
-        <div id="id01" class="modal">
-
-          <form class="modal-content animate" action="/action_page.php">
-            <div class="imgcontainer">
-              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-              <img src="../img/user.jpg" alt="Avatar" class="avatar" style="width:100px;height:100px;">
-            </div>
-
-            <div class="container">
-              <label for="uname"><b>Username</b></label>
-              <input type="text" placeholder="Enter Username" name="uname" required>
-
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
-
-              <button type="submit">Login</button>
-              <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-              </label>
-            </div>
-
-            <div class="container" style="background-color:#f1f1f1">
-              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-              <span class="psw"><a href="#">Forgot password?</a></span>
-            </div>
-          </form>
-        </div>
+            </ul>
 
 
       </div>
@@ -88,157 +59,38 @@
 
 
   <p id="genreHeader">
-    <b>Action Movies</b>
+    <b>Action</b>
   </p>
 
-<div class="searchBar">
-  <span class="searchWord"> Search:</span>
-  <input name="search" placeholder="Search by Title or Actor..">
-</div>
 
-<div class="pagination">
-  <a href="#">&laquo;</a>
-  <a href="#">1</a>
-  <a href="#">2</a>
-  <a href="#">3</a>
-  <a href="#">4</a>
-  <a href="#">5</a>
-  <a href="#">6</a>
-  <a href="#">&raquo;</a>
-</div>
+    <!-- <div class="container">
+      	<div class="jumbotron">
+  	    	<h3 class="text-center">Search For Any Movie</h3>
+  	    	<form id="searchForm">
+  	    		<input type="text" class="form-control" id="searchText" placeholder="Search Movies...">
+  	    	</form>
+  	    </div>
+      </div> -->
 
-  <div class="container">
-    <div class="flex-container">
-      <div style="flex-grow: 1">
-        <img src="../img/MovieImgs/creed2.jpg" alt="Creed II" style="width:225px;height:300px;">
-      </div>
-      <div style="flex-grow: 8">
-        <b>Creed II</b><br>Under the tutelage of Rocky Balboa, newly crowned light heavyweight champion Adonis Creed
-        faces off against Viktor Drago, the son of Ivan Drago.<br>
-        <br>Cast:<br>Tessa Thompson<br>Michael B. Jordan<br>Sylvester Stallone<br>Dolph Lundgren
-      </div>
-    </div>
-  </div>
+      <div class="container" style="background-color:rgba(0, 0, 0, 0);">
+        <div id="movies" ></div>
+        <div id="movies2" ></div>
+          <div id="movies3" ></div>
+          <div id="movies4" ></div>
+        </div>
 
-  <div class="container">
-    <div class="flex-container">
-      <div style="flex-grow: 1">
-        <img src="../img/MovieImgs/creed2.jpg" alt="Creed II" style="width:225px;height:300px;">
-      </div>
-      <div style="flex-grow: 8">
-        <b>Creed II</b><br>Under the tutelage of Rocky Balboa, newly crowned light heavyweight champion Adonis Creed
-        faces off against Viktor Drago, the son of Ivan Drago.<br>
-        <br>Cast:<br>Tessa Thompson<br>Michael B. Jordan<br>Sylvester Stallone<br>Dolph Lundgren
-      </div>
-    </div>
-  </div>
+        <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="../js/actiongenre.js"></script>
+      </body>
 
-  <div class="container">
-    <div class="flex-container">
-      <div style="flex-grow: 1">
-        <img src="../img/MovieImgs/creed2.jpg" alt="Creed II" style="width:225px;height:300px;">
-      </div>
-      <div style="flex-grow: 8">
-        <b>Creed II</b><br>Under the tutelage of Rocky Balboa, newly crowned light heavyweight champion Adonis Creed
-        faces off against Viktor Drago, the son of Ivan Drago.<br>
-        <br>Cast:<br>Tessa Thompson<br>Michael B. Jordan<br>Sylvester Stallone<br>Dolph Lundgren
-      </div>
-    </div>
-  </div>
 
-  <div class="container">
-    <div class="flex-container">
-      <div style="flex-grow: 1">
-        <img src="../img/MovieImgs/creed2.jpg" alt="Creed II" style="width:225px;height:300px;">
-      </div>
-      <div style="flex-grow: 8">
-        <b>Creed II</b><br>Under the tutelage of Rocky Balboa, newly crowned light heavyweight champion Adonis Creed
-        faces off against Viktor Drago, the son of Ivan Drago.<br>
-        <br>Cast:<br>Tessa Thompson<br>Michael B. Jordan<br>Sylvester Stallone<br>Dolph Lundgren
-      </div>
-    </div>
-  </div>
 
-  <div class="container">
-    <div class="flex-container">
-      <div style="flex-grow: 1">
-        <img src="../img/MovieImgs/creed2.jpg" alt="Creed II" style="width:225px;height:300px;">
-      </div>
-      <div style="flex-grow: 8">
-        <b>Creed II</b><br>Under the tutelage of Rocky Balboa, newly crowned light heavyweight champion Adonis Creed
-        faces off against Viktor Drago, the son of Ivan Drago.<br>
-        <br>Cast:<br>Tessa Thompson<br>Michael B. Jordan<br>Sylvester Stallone<br>Dolph Lundgren
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="flex-container">
-      <div style="flex-grow: 1">
-        <img src="../img/MovieImgs/creed2.jpg" alt="Creed II" style="width:225px;height:300px;">
-      </div>
-      <div style="flex-grow: 8">
-        <b>Creed II</b><br>Under the tutelage of Rocky Balboa, newly crowned light heavyweight champion Adonis Creed
-        faces off against Viktor Drago, the son of Ivan Drago.<br>
-        <br>Cast:<br>Tessa Thompson<br>Michael B. Jordan<br>Sylvester Stallone<br>Dolph Lundgren
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="flex-container">
-      <div style="flex-grow: 1">
-        <img src="../img/MovieImgs/creed2.jpg" alt="Creed II" style="width:225px;height:300px;">
-      </div>
-      <div style="flex-grow: 8">
-        <b>Creed II</b><br>Under the tutelage of Rocky Balboa, newly crowned light heavyweight champion Adonis Creed
-        faces off against Viktor Drago, the son of Ivan Drago.<br>
-        <br>Cast:<br>Tessa Thompson<br>Michael B. Jordan<br>Sylvester Stallone<br>Dolph Lundgren
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="flex-container">
-      <div style="flex-grow: 1">
-        <img src="../img/MovieImgs/creed2.jpg" alt="Creed II" style="width:225px;height:300px;">
-      </div>
-      <div style="flex-grow: 8">
-        <b>Creed II</b><br>Under the tutelage of Rocky Balboa, newly crowned light heavyweight champion Adonis Creed
-        faces off against Viktor Drago, the son of Ivan Drago.<br>
-        <br>Cast:<br>Tessa Thompson<br>Michael B. Jordan<br>Sylvester Stallone<br>Dolph Lundgren
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="flex-container">
-      <div style="flex-grow: 1">
-        <img src="../img/MovieImgs/creed2.jpg" alt="Creed II" style="width:225px;height:300px;">
-      </div>
-      <div style="flex-grow: 8">
-        <b>Creed II</b><br>Under the tutelage of Rocky Balboa, newly crowned light heavyweight champion Adonis Creed
-        faces off against Viktor Drago, the son of Ivan Drago.<br>
-        <br>Cast:<br>Tessa Thompson<br>Michael B. Jordan<br>Sylvester Stallone<br>Dolph Lundgren
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="flex-container">
-      <div style="flex-grow: 1">
-        <img src="../img/MovieImgs/creed2.jpg" alt="Creed II" style="width:225px;height:300px;">
-      </div>
-      <div style="flex-grow: 8">
-        <b>Creed II</b><br>Under the tutelage of Rocky Balboa, newly crowned light heavyweight champion Adonis Creed
-        faces off against Viktor Drago, the son of Ivan Drago.<br>
-        <br>Cast:<br>Tessa Thompson<br>Michael B. Jordan<br>Sylvester Stallone<br>Dolph Lundgren
-      </div>
-    </div>
-  </div>
 
 </body>
-
 <footer>
     <div class="footcontainer">
       <div class="">
@@ -252,4 +104,5 @@
       </div>
     </div>
     </footer>
+
 </html>

@@ -14,7 +14,8 @@ function getMovies(searchText){
           <div class="col-md-3">
             <div class="well text-center">
               <img src="${movie.Poster}">
-              <h5>${movie.Title}</h5>
+              <h4 style="color:black;">${movie.Title}</h4>
+              <h5 style="color:black;">${movie.Year}</h5>
               <a onclick="movieSelected('${movie.imdbID}')" class="btn btn-primary" href="#">Movie Details</a>
             </div>
           </div>
@@ -44,7 +45,8 @@ function getMovies2(searchText){
           <div class="col-md-3">
             <div class="well text-center">
               <img src="${movie.Poster}">
-              <h5>${movie.Title}</h5>
+              <h4 style="color:black;">${movie.Title}</h4>
+                <h5 style="color:black;">${movie.Year}</h5>
               <a onclick="movieSelected('${movie.imdbID}')" class="btn btn-primary" href="#">Movie Details</a>
             </div>
           </div>
@@ -74,7 +76,8 @@ function getMovies3(searchText){
           <div class="col-md-3">
             <div class="well text-center">
               <img src="${movie.Poster}">
-              <h5>${movie.Title}</h5>
+              <h4 style="color:black;">${movie.Title}</h4>
+                <h5 style="color:black;">${movie.Year}</h5>
               <a onclick="movieSelected('${movie.imdbID}')" class="btn btn-primary" href="#">Movie Details</a>
             </div>
           </div>
@@ -104,7 +107,8 @@ function getMovies4(searchText){
           <div class="col-md-3">
             <div class="well text-center">
               <img src="${movie.Poster}">
-              <h5>${movie.Title}</h5>
+              <h4 style="color:black;">${movie.Title}</h4>
+                <h5 style="color:black;">${movie.Year}</h5>
               <a onclick="movieSelected('${movie.imdbID}')" class="btn btn-primary" href="#">Movie Details</a>
             </div>
           </div>
@@ -122,7 +126,7 @@ function getMovies4(searchText){
 
 function movieSelected(id){
   sessionStorage.setItem('movieId', id);
-  window.location = 'singlemovie.html'; //chamge page to movie.html
+  window.location = 'pages/singlemovie.html'; //chamge page to movie.html
   return false;
 }
 
@@ -142,6 +146,8 @@ function getMovie(){
           </div>
           <div class="col-md-8">
             <h2>${movie.Title}</h2>
+
+
             <ul class="list-group">
               <li class="list-group-item"><strong>Genre:</strong> ${movie.Genre}</li>
               <li class="list-group-item"><strong>Released:</strong> ${movie.Released}</li>
@@ -158,8 +164,7 @@ function getMovie(){
             <h3>Plot</h3>
             ${movie.Plot}
             <hr>
-            <a href="http://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-primary">View IMDB</a>
-            <a href="search.html" class="btn btn-default">Go Back To Search</a>
+          
           </div>
         </div>
       `;

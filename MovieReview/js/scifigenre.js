@@ -1,6 +1,6 @@
 $(document).ready(() => {
 
-    getMovies("Love");
+    getMovies("Alien");
 
 });
 
@@ -32,7 +32,7 @@ function getMovies(searchText){
 
 $(document).ready(() => {
 
-    getMovies2("Romance");
+    getMovies2("Star Wars");
 
 });
 
@@ -63,9 +63,10 @@ function getMovies2(searchText){
 }
 
 
+//action_page
 $(document).ready(() => {
 
-    getMovies3("Romance");
+    getMovies3("Harry Potter");
 
 });
 
@@ -97,7 +98,7 @@ function getMovies3(searchText){
 
 $(document).ready(() => {
 
-    getMovies4("Loved");
+    getMovies4("Space");
 
 });
 
@@ -126,6 +127,8 @@ function getMovies4(searchText){
       console.log(err);
     });
 }
+
+//action_page end
 
 
 function movieSelected(id){
@@ -168,7 +171,7 @@ function getMovie(){
             <h3>Plot</h3>
             ${movie.Plot}
             <hr>
-            <a href="genre_romance.html" class="btn btn-default">Go Back To Romance</a>
+            <a href="search.html" class="btn btn-default">Go Back To Search</a>
           </div>
         </div>
       `;

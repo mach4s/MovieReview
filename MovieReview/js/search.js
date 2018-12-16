@@ -53,6 +53,8 @@ function getMovie(){
           </div>
           <div class="col-md-8">
             <h2>${movie.Title}</h2>
+
+
             <ul class="list-group">
               <li class="list-group-item"><strong>Genre:</strong> ${movie.Genre}</li>
               <li class="list-group-item"><strong>Released:</strong> ${movie.Released}</li>

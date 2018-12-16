@@ -11,3 +11,7 @@ Since we could only retrieve the movie data by ID or title, we could not create 
   e.g. "Love" for Romance genre
   
 We did not use a database to store the comment section for each movie possible. The comment section is the same for all of the individual movies.
+
+
+Took out login modal because database was not in use.
+Some files are not used such as login_style.css and single.html. They are there for future uses.

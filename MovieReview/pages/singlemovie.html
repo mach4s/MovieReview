@@ -3,8 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>MovieInfo</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+ <!--star  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="starability-all.min.css">
+  <!--  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
     <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
     <link rel="stylesheet" href="../css/searchcss.css">
+    <link rel="stylesheet" href="../css/our_css_layout.css">
+    <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
+
   </head>
   <body>
     <!-- <nav class="navbar navbar-default">
@@ -14,6 +30,77 @@
         </div>
       </div>
     </nav> -->
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../homepage.html">Movie Review</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="homepage.html">Home</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="genre.html">Genres <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="pages/genre_romance.html">Romance</a></li>
+                <li><a href="pages/genre_action.html">Action</a></li>
+                <li><a href="pages/genre_sci-fi.html">Sci-Fi</a></li>
+                <li><a href="genre.html">Thriller</a></li>
+                <!-- <li><a href="pages/userTop10.html">My Top 10</a></li> -->
+              </ul>
+            </li>
+            <li><a href="pages/search.html">Search</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+          <div id="id01" class="modal">
+
+            <form class="modal-content animate" action="/action_page.php">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="img/user.jpg" alt="Avatar" class="avatar" style="width:100px;height:100px;">
+              </div>
+
+              <div class="container">
+
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw"><a href="#">Forgot password?</a></span>
+              </div>
+            </form>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </nav>
+
+
+
 
     <div class="container">
       <div id="movie" class="well"></div>
@@ -28,5 +115,204 @@
   <script>
     getMovie();
   </script>
+
+
+  <legend>Reviews</legend>
+
+  <ul style="list-style-type: none;">
+    <br>
+   <li >
+     <div class="l-media">
+       <div class="l-media__figure">
+
+       </div>
+       <div class="l-media__body" style="  border: solid 2px grey;">
+          <div class = "comment-user-name">
+            Anthony Lane
+
+         </div>
+
+         <div class="vjs-comment-list">
+
+           It's a technological marvel starring the world's biggest celebrity: the full weight of Hollywood spectacle incarnate.
+       </div>
+     </div>
+      </li>
+  <br>
+    <li >
+     <div class="l-media">
+       <div class="l-media__figure">
+
+       </div>
+       <div class="l-media__body" style="  border: solid 2px grey;">
+          <div class = "comment-user-name">
+            Debbie Baldwin
+
+         </div>
+
+         <div class="vjs-comment-list">
+           Jolie is amazing here. She makes the iconic sorceress equal parts vicious and vulnerable. Between her performance and the spectacular special effects, you almost don't see the mediocre movie going on in the background.
+
+    </div>
+
+       </div>
+     </div>
+      </li>
+
+      <br>
+    <li >
+     <div class="l-media">
+       <div class="l-media__figure">
+
+       </div>
+
+       <div class="l-media__body" style="  border: solid 2px grey;">
+          <div class = "comment-user-name">
+
+  Zaki Hasan
+
+         </div>
+
+         <div class="vjs-comment-list" >
+
+   Maleficent serves as a perfect example of why [Angelina] Jolie is one of the most in-demand actors on the planet. </div>
+
+
+
+       </div>
+     </div>
+      </li>
+
+    <br>
+    <li >
+     <div class="l-media">
+       <div class="l-media__figure">
+
+       </div>
+
+       <div class="l-media__body" style="  border: solid 2px grey;">
+          <div class = "comment-user-name">
+            Frank Ochieng
+
+
+         </div>
+
+         <div class="vjs-comment-list" >
+        Maleficent should be more than just a Hollywood-style middle-aged mean girl with a copycat Norma Desmond-like disposition drowning in amusement park-inspired theatrics.</div>
+
+
+
+       </div>
+     </div>
+    </li>
+    <br>
+    <li>
+
+      <div class="l-media">
+        <div class="l-media__figure">
+
+        </div>
+
+        <div class="l-media__body" style="  border: solid 2px grey;">
+           <div class = "comment-user-name">
+                 <p id="demo"></p>
+
+
+
+
+        </div>
+      </div>
+    </li>
+    </ul>
+  <div class="flex-container">
+
+
+  <div class="">
+    <h4>Rating:</h4>
+  </div>
+  <form>
+    <fieldset class="rating">
+        <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+        <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+        <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+        <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+        <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+        <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+        <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+        <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+        <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+        <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+    </fieldset>
+  <div class="">
+
+
+  <!-- <form>
+    <fieldset class="starability-basic">
+
+      <input type="radio" id="rate5" name="rating" value="5" />
+      <label for="rate5" title="Amazing"></label>
+
+      <input type="radio" id="rate4" name="rating" value="4" />
+      <label for="rate4" title="Very good"></label>
+
+      <input type="radio" id="rate3" name="rating" value="3" />
+      <label for="rate3" title="Average"></label>
+
+      <input type="radio" id="rate2" name="rating" value="2" />
+      <label for="rate2" title="Not good"></label>
+
+      <input type="radio" id="rate1" name="rating" value="1" />
+      <label for="rate1" title="Terrible"></label>
+    </fieldset>
+  </form> -->
+  </div>
+  </div>
+
+  <!-- <div class="flex-container" style="border-color: grey; width: 80%;">
+    <div class="">
+      <p>User 1</p>
+    </div>
+    <div class="">
+      <p> This is a great movie.</p>
+    </div>
+  </div> -->
+
+
+  <p>Username (Guest):</p>
+  <input type="text" name="username" id="user1" style="width:500px;">
+
+  <p>Leave a Review:</p>
+  <textarea rows = "7" cols = "161" name="guestReview" id="review1">
+  </textarea>
+  <button type="button" name="button" onclick="myFunction()">Submit</button>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("user1").value;
+    var y = document.getElementById("review1").value;
+    document.getElementById("demo").innerHTML = "<b>"+ x + "</b>" + "<br>" +  y;
+  }
+  </script>
+
+    </div>
+
+
+
+
+
   </body>
+
+  <footer>
+      <div class="footcontainer">
+        <div class="">
+          Contact us
+        </div>
+        <div class="">
+          About us
+        </div>
+        <div class="">
+          Movies and more
+        </div>
+      </div>
+      </footer>
 </html>

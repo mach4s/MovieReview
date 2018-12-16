@@ -608,3 +608,19 @@ h1 { font-size: 1.5em; margin: 10px; } */
 .rating > input:checked ~ label:hover,
 .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
 .rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
+
+
+
+#movies img, #movie img{
+  width:100%;
+}
+
+@media(min-width:960px){
+  #movies .col-md-3 .well{
+    height: 450px;/*390px;*/
+  }
+
+  #movies .col-md-3 img{
+    height:330px;/*240px;*/
+  }
+}

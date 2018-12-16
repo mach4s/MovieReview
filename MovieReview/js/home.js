@@ -1,9 +1,9 @@
 $(document).ready(() => {
-    // let searchText = $('#searchText').val();
-    getMovies("Malificent");
+  // let searchText = $('#searchText').val();
+  getMovies("Malificent");
 });
 
-function getMovies(searchText){
+function getMovies(searchText) {
   axios.get("http://www.omdbapi.com/?apikey=6c1b77b8&s=" + searchText)
     .then((response) => {
       console.log(response);
@@ -30,11 +30,11 @@ function getMovies(searchText){
 }
 
 $(document).ready(() => {
-    // let searchText = $('#searchText').val();
-    getMovies2("Harry Potter and the Forbidden Journey");
+  // let searchText = $('#searchText').val();
+  getMovies2("Harry Potter and the Forbidden Journey");
 });
 
-function getMovies2(searchText){
+function getMovies2(searchText) {
   axios.get("http://www.omdbapi.com/?apikey=6c1b77b8&s=" + searchText)
     .then((response) => {
       console.log(response);
@@ -61,11 +61,11 @@ function getMovies2(searchText){
 }
 
 $(document).ready(() => {
-    // let searchText = $('#searchText').val();
-    getMovies3("Crazy Rich Asians");
+  // let searchText = $('#searchText').val();
+  getMovies3("Crazy Rich Asians");
 });
 
-function getMovies3(searchText){
+function getMovies3(searchText) {
   axios.get("http://www.omdbapi.com/?apikey=6c1b77b8&s=" + searchText)
     .then((response) => {
       console.log(response);
@@ -92,11 +92,11 @@ function getMovies3(searchText){
 }
 
 $(document).ready(() => {
-    // let searchText = $('#searchText').val();
-    getMovies4("Wreck-it Ralph: Ralph Breaks VR");
+  // let searchText = $('#searchText').val();
+  getMovies4("Wreck-it Ralph: Ralph Breaks VR");
 });
 
-function getMovies4(searchText){
+function getMovies4(searchText) {
   axios.get("http://www.omdbapi.com/?apikey=6c1b77b8&s=" + searchText)
     .then((response) => {
       console.log(response);
@@ -124,21 +124,21 @@ function getMovies4(searchText){
 
 
 
-function movieSelected(id){
+function movieSelected(id) {
   sessionStorage.setItem('movieId', id);
   window.location = 'pages/singlemovie.html'; //chamge page to movie.html
   return false;
 }
 
-function getMovie(){
+function getMovie() {
   let movieId = sessionStorage.getItem('movieId');
 
-  axios.get('http://www.omdbapi.com/?apikey=6c1b77b8&i='+movieId+'&plot=full')
+  axios.get('http://www.omdbapi.com/?apikey=6c1b77b8&i=' + movieId + '&plot=full')
     .then((response) => {
       console.log(response);
       let movie = response.data;
 
-      let output =`
+      let output = `
         <div class="row">
           <div class="col-md-4">
             <img src="${movie.Poster}" class="thumbnail">
@@ -164,7 +164,7 @@ function getMovie(){
             <h3>Plot</h3>
             ${movie.Plot}
             <hr>
-          
+
           </div>
         </div>
       `;

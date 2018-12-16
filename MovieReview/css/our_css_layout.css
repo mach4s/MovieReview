@@ -21,7 +21,6 @@ footer {
   margin-top: 100px;
 }
 
-
 .center {
   margin: auto;
   position: absolute;
@@ -34,7 +33,6 @@ footer {
   /* Fallback color */
   background-color: rgba(0, 0, 0, 0.7);
   /* Black w/opacity/see-through  */
-
   color: white;
   font-weight: bold;
   border: 3px solid #f1f1f1;
@@ -46,7 +44,6 @@ footer {
   width: 80%;
   padding: 20px;
   text-align: center;
-
 }
 
 .flex-container {
@@ -62,7 +59,6 @@ footer {
   /* width: 80%; */
   /* padding:30px; */
 }
-
 
 .flexhome-container {
   display: flex;
@@ -80,11 +76,10 @@ footer {
 
 .flex-containerreview {
   display: flex;
-
 }
 
 .flex-containerreview>div {
-padding: 10px;
+  padding: 10px;
   text-align: left;
   background-color: white;
   /* margin: 10px; */
@@ -97,10 +92,8 @@ padding: 10px;
   flex-direction: column;
 }
 
-
-
 .container {
-   border-radius: 25px;
+  border-radius: 25px;
   padding: 30px;
   width: 80%;
   height: 80%;
@@ -121,7 +114,6 @@ padding: 10px;
   border-color: grey;
   margin-top: 100px;
 }
-
 
 .singledescr {
   display: block;
@@ -233,10 +225,9 @@ button:hover {
   background-color: #bfbfbf;
   float: left;
 }
+
 /*======= */
-
 /*>>>>>>> 54ac775f0d85cb0b9d6bbdb3e0c8ecfcde921e63 */
-
 /* Center the image and position the close button */
 .imgcontainer {
   text-align: center;
@@ -249,9 +240,9 @@ img.avatar {
   width: 40%;
   border-radius: 50%;
 }
+
 /*======= */
 /*>>>>>>> 54ac775f0d85cb0b9d6bbdb3e0c8ecfcde921e63 */
-
 .container {
   padding: 16px;
 }
@@ -263,25 +254,35 @@ span.psw {
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed;  /* Stay in place */
-  z-index: 1;   /* Sit on top */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%;  /* Full width */
-  height: 100%;   /* Full height */
-  overflow: auto;  /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0);  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);  /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
   padding-top: 60px;
 }
 
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto 15% auto;  /* 5% from the top, 15% from the bottom and centered */
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  width: 80%;  /* Could be more or less, depending on screen size */
+  width: 80%;
+  /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button (x) */
@@ -307,9 +308,13 @@ span.psw {
 }
 
 @-webkit-keyframes animatezoom {
-  from {    -webkit-transform: scale(0)  }
+  from {
+    -webkit-transform: scale(0)
+  }
 
-  to {    -webkit-transform: scale(1)  }
+  to {
+    -webkit-transform: scale(1)
+  }
 }
 
 @keyframes animatezoom {
@@ -335,9 +340,7 @@ span.psw {
 }
 
 /*  star*/
-
 /* Star rating style */
-
 .star-rating {
   display: inline-block;
   overflow: hidden;
@@ -348,14 +351,16 @@ span.psw {
   font-size: 15px;
   font-size: 1em;
   width: 4.7em;
-  font-family: "FontAwesome"; }
+  font-family: "FontAwesome";
+}
 
 .star-rating:before {
   content: "\f005\f005\f005\f005\f005";
   float: left;
   top: 0;
   left: 0;
-  position: absolute; }
+  position: absolute;
+}
 
 .star-rating span {
   overflow: hidden;
@@ -363,17 +368,19 @@ span.psw {
   top: 0;
   left: 0;
   position: absolute;
-  padding-top: 1.5em; }
+  padding-top: 1.5em;
+}
 
 .star-rating span:before {
   content: "\f005\f005\f005\f005\f005";
   top: 0;
   position: absolute;
   left: 0;
-  color: #ffaa3c; }
+  color: #ffaa3c;
+}
 
-  /* star rating input */
-  .starInput {
+/* star rating input */
+.starInput {
   border: 0;
   width: 1px;
   height: 1px;
@@ -402,11 +409,11 @@ span.psw {
   user-select: none;
 }
 
-.starInput:checked ~ label:before {
+.starInput:checked~label:before {
   color: #FFC107;
 }
 
-.starLabel:hover ~ label:before {
+.starLabel:hover~label:before {
   color: #ffdb70;
 }
 
@@ -415,8 +422,6 @@ span.psw {
 }
 
 /* input text box */
-
-
 /*  footer*/
 /* .footer {
    position: fixed;
@@ -430,86 +435,83 @@ span.psw {
    padding: 30px;
    margin-top: 100px;
 } */
-
 .footercontainer {
-display: flex;
-flex-wrap: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
 }
-a  {
+
+a {
   color: white;
 }
 
-.footercontainer >div {
+.footercontainer>div {
   text-align: left;
   margin: 10px;
   position: fixed;
 }
 
-
 /* single movie tabs  */
-
 /* Style the tab */
 .tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ccc;
+  background-color: #ccc;
 }
 
 /* Style the tab content */
 .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
 }
-
 
 /* comment */
 @import "compass/css3";
 
 .vjs-comment-list {
-    list-style-type: none;
-    position: relative;
-    background: #fff;
-    font-size: 3;
-    position: relative;
-    /* max-width: 350px; */
-    width: 90%;
-    -moz-user-select: text !important;
-    margin-bottom: 10px;
-    font-family: "Arial", Times, Arial, sans-serif !important;
+  list-style-type: none;
+  position: relative;
+  background: #fff;
+  font-size: 3;
+  position: relative;
+  /* max-width: 350px; */
+  width: 90%;
+  -moz-user-select: text !important;
+  margin-bottom: 10px;
+  font-family: "Arial", Times, Arial, sans-serif !important;
   /* border-right:  solid 5px #118C4E; */
 }
 
 $global-baseline: 12px;
 
 %cf {
-  &:after{
-    content:"";
-    display:table;
-    clear:both;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
@@ -528,60 +530,58 @@ $global-baseline: 12px;
   }
 
   &__body {
-    display: flex; display: -webkit-flex;
-    flex-direction: column; -webkit-flex-direction: column;
-
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
   }
 }
 
-.comment-user-name{
-
-  top:0;
-  left:80px;
+.comment-user-name {
+  top: 0;
+  left: 80px;
   font-size: 10;
   font-family: "Arial", Times, Arial, sans-serif !important;
   font-weight: bold;
-
 }
 
 .comment-id {
-    top: 0;
-    left: 100px;
-    font-size: 8;
-    color: red;
-    font-family: "Arial", Times, Arial, sans-serif !important;
-
+  top: 0;
+  left: 100px;
+  font-size: 8;
+  color: red;
+  font-family: "Arial", Times, Arial, sans-serif !important;
 }
-.comment-profile-pic{
- top:0;
- left:0;
-width: 48px;
-height: 48px;
-background-repeat: no-repeat;
-background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAJdEVYdENvbW1lbnQAKlKRRNAAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuNWWFMmUAAAK3SURBVFhH3ZgJb9pAEIX5/3+rIQlRSSA0DS6HD4wxxgZjbrBNJ8m2QUOzzHNKhfr0JCQ0xyfbu+tx6eqreVH+f4Gu762G4Zm90B8lrj8pVy0WIPRngW4erB/WaBzP0yzb/1L1W4+FyV0c6K7u9P04TVNFcaCOE345ihe6CBDdDtON0vT9khzLD6Z0E1mixDBQpW5PZ0vVVqtkvrqr2yz9pDGgm5q9WG1UQ4Eo+PYBY8KA/DBRrcQaBAkrojcAVKnZWZ6rPmJRym0NuEgA0HPHV01AfW/7rJTGABBteqoDqG4vYqU0BoCcwVh1AOV4E1ZKYwTIm6gOoBwvZqU0BoAsN1IdQFEiK6UxANR2RqoDqLYTsFIaA0BGd6g6gDK65wF6ahVb9vlTa8BKaQwAmW7BZW+eY9nTbpvv4W36TZQo36yBK7T706uPRLs0u6ryah8ZAEpmK9UB1HS+ZKU0BoCG4Ux1ADUMgQMfAGpZwcvzgKtljVgpjQEg8iQRvSseKk4WrIjeGJDjweer7Y1ZEb0xoMemp/qI9Wh4rIjeGBDNG5vtTrUSiIKvxQv+zRgQ2e4DZ77dx+4XGQaiaUs4eFBYgdEMBiIPglj11IrCWKLERYCCSLRDUhhLlLgIUCzbjSiMJUpcBGi12aqeWq3WW5YoMQzUsUe5bFykMApm6SeNAZXvTWh4zfLsvPtQ7bmvWkmVUworojcG5PqiBX8odwBMiWQpEB1J4+lCNQE1jheULvymdgKIDq9mZ5jMC74rHoqKUKnyqUfqQ6BK3TbdaL0BjlKJ1pstDbKVusPa/fYRUNVsGB5tsgU+BcmVZXkQJQ1jcPzy/w5Ek0q3Fy2RL3afF7Xr9sLDIekF6LZu0/I5/ND8j0WtCaDyilVqdvzdruDA9XdFGPTUl2iHV39chkrq92J0YUD7/U+iVfd1XLZ9HgAAAABJRU5ErkJggg==);
+
+.comment-profile-pic {
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAJdEVYdENvbW1lbnQAKlKRRNAAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuNWWFMmUAAAK3SURBVFhH3ZgJb9pAEIX5/3+rIQlRSSA0DS6HD4wxxgZjbrBNJ8m2QUOzzHNKhfr0JCQ0xyfbu+tx6eqreVH+f4Gu762G4Zm90B8lrj8pVy0WIPRngW4erB/WaBzP0yzb/1L1W4+FyV0c6K7u9P04TVNFcaCOE345ihe6CBDdDtON0vT9khzLD6Z0E1mixDBQpW5PZ0vVVqtkvrqr2yz9pDGgm5q9WG1UQ4Eo+PYBY8KA/DBRrcQaBAkrojcAVKnZWZ6rPmJRym0NuEgA0HPHV01AfW/7rJTGABBteqoDqG4vYqU0BoCcwVh1AOV4E1ZKYwTIm6gOoBwvZqU0BoAsN1IdQFEiK6UxANR2RqoDqLYTsFIaA0BGd6g6gDK65wF6ahVb9vlTa8BKaQwAmW7BZW+eY9nTbpvv4W36TZQo36yBK7T706uPRLs0u6ryah8ZAEpmK9UB1HS+ZKU0BoCG4Ux1ADUMgQMfAGpZwcvzgKtljVgpjQEg8iQRvSseKk4WrIjeGJDjweer7Y1ZEb0xoMemp/qI9Wh4rIjeGBDNG5vtTrUSiIKvxQv+zRgQ2e4DZ77dx+4XGQaiaUs4eFBYgdEMBiIPglj11IrCWKLERYCCSLRDUhhLlLgIUCzbjSiMJUpcBGi12aqeWq3WW5YoMQzUsUe5bFykMApm6SeNAZXvTWh4zfLsvPtQ7bmvWkmVUworojcG5PqiBX8odwBMiWQpEB1J4+lCNQE1jheULvymdgKIDq9mZ5jMC74rHoqKUKnyqUfqQ6BK3TbdaL0BjlKJ1pstDbKVusPa/fYRUNVsGB5tsgU+BcmVZXkQJQ1jcPzy/w5Ek0q3Fy2RL3afF7Xr9sLDIekF6LZu0/I5/ND8j0WtCaDyilVqdvzdruDA9XdFGPTUl2iHV39chkrq92J0YUD7/U+iVfd1XLZ9HgAAAABJRU5ErkJggg==);
 }
 
 .singleMal {
-position: relative;
-
+  position: relative;
 }
-
 
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
 /* fieldset, label { margin: 0; padding: 0; }
 body{ margin: 20px; }
 h1 { font-size: 1.5em; margin: 10px; } */
-
 /****** Style Star Rating Widget *****/
-
 .rating {
   border: none;
   float: left;
 }
 
-.rating > input { display: none; }
-.rating > label:before {
+.rating>input {
+  display: none;
+}
+
+.rating>label:before {
   margin: 5px;
   font-size: 1.25em;
   font-family: FontAwesome;
@@ -589,45 +589,48 @@ h1 { font-size: 1.5em; margin: 10px; } */
   content: "\f005";
 }
 
-.rating > .half:before {
+.rating>.half:before {
   content: "\f089";
   position: absolute;
 }
 
-.rating > label {
+.rating>label {
   color: #ddd;
- float: right;
+  float: right;
 }
 
 /***** CSS Magic to Highlight Stars on Hover *****/
-
-.rating > input:checked ~ label, /* show gold star when clicked */
-.rating:not(:checked) > label:hover, /* hover current star */
-.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
-
-.rating > input:checked + label:hover, /* hover current star when changing rating */
-.rating > input:checked ~ label:hover,
-.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
-
-
-
-
-
-
-/*  */
-
-
-#movies img, #movie img, #movies2 img, #movie2 img, #movies3 img, #movie3 img, #movies4 img, #movie4 img{
-  width:100%;
+.rating>input:checked~label,
+/* show gold star when clicked */
+.rating:not(:checked)>label:hover,
+/* hover current star */
+.rating:not(:checked)>label:hover~label {
+  color: #FFD700;
 }
 
-@media(min-width:960px){
-  #movies .col-md-3 .well, #movies2 .col-md-3 .well, #movies3 .col-md-3 .well, #movies4 .col-md-3 .well{
-    height: 450px;/*390px;*/
+/* hover previous stars in list */
+.rating>input:checked+label:hover,
+/* hover current star when changing rating */
+.rating>input:checked~label:hover,
+.rating>label:hover~input:checked~label,
+/* lighten current selection */
+.rating>input:checked~label:hover~label {
+  color: #FFED85;
+}
+
+/*  */
+#movies img, #movie img, #movies2 img, #movie2 img, #movies3 img, #movie3 img, #movies4 img, #movie4 img {
+  width: 100%;
+}
+
+@media(min-width:960px) {
+  #movies .col-md-3 .well, #movies2 .col-md-3 .well, #movies3 .col-md-3 .well, #movies4 .col-md-3 .well {
+    height: 450px;
+    /*390px;*/
   }
 
-  #movies .col-md-3 img{
-    height:330px;/*240px;*/
+  #movies .col-md-3 img {
+    height: 330px;
+    /*240px;*/
   }
 }

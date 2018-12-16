@@ -1,11 +1,11 @@
 $(document).ready(() => {
 
-    getMovies("Alien");
+  getMovies("Alien");
 
 });
 
 
-function getMovies(searchText){
+function getMovies(searchText) {
   axios.get("http://www.omdbapi.com/?apikey=6c1b77b8&s=" + searchText)
     .then((response) => {
       console.log(response);
@@ -32,12 +32,12 @@ function getMovies(searchText){
 
 $(document).ready(() => {
 
-    getMovies2("Star Wars");
+  getMovies2("Star Wars");
 
 });
 
 
-function getMovies2(searchText){
+function getMovies2(searchText) {
   axios.get("http://www.omdbapi.com/?apikey=6c1b77b8&s=" + searchText)
     .then((response) => {
       console.log(response);
@@ -66,12 +66,12 @@ function getMovies2(searchText){
 //action_page
 $(document).ready(() => {
 
-    getMovies3("Harry Potter");
+  getMovies3("Harry Potter");
 
 });
 
 
-function getMovies3(searchText){
+function getMovies3(searchText) {
   axios.get("http://www.omdbapi.com/?apikey=6c1b77b8&s=" + searchText)
     .then((response) => {
       console.log(response);
@@ -98,12 +98,12 @@ function getMovies3(searchText){
 
 $(document).ready(() => {
 
-    getMovies4("Space");
+  getMovies4("Space");
 
 });
 
 
-function getMovies4(searchText){
+function getMovies4(searchText) {
   axios.get("http://www.omdbapi.com/?apikey=6c1b77b8&s=" + searchText)
     .then((response) => {
       console.log(response);
@@ -131,21 +131,21 @@ function getMovies4(searchText){
 //action_page end
 
 
-function movieSelected(id){
+function movieSelected(id) {
   sessionStorage.setItem('movieId', id);
   window.location = 'singlemovie.html'; //chamge page to movie.html
   return false;
 }
 
-function getMovie(){
+function getMovie() {
   let movieId = sessionStorage.getItem('movieId');
 
-  axios.get('http://www.omdbapi.com/?apikey=6c1b77b8&i='+movieId+'&plot=full')
+  axios.get('http://www.omdbapi.com/?apikey=6c1b77b8&i=' + movieId + '&plot=full')
     .then((response) => {
       console.log(response);
       let movie = response.data;
 
-      let output =`
+      let output = `
         <div class="row">
           <div class="col-md-4">
             <img src="${movie.Poster}" class="thumbnail">

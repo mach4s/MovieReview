@@ -6,7 +6,7 @@ $(document).ready(() => {
   });
 });
 
-function getMovies(searchText){
+function getMovies(searchText) {
   axios.get("http://www.omdbapi.com/?apikey=6c1b77b8&s=" + searchText)
     .then((response) => {
       console.log(response);
@@ -31,21 +31,21 @@ function getMovies(searchText){
     });
 }
 
-function movieSelected(id){
+function movieSelected(id) {
   sessionStorage.setItem('movieId', id);
   window.location = 'singlemovie.html'; //chamge page to movie.html
   return false;
 }
 
-function getMovie(){
+function getMovie() {
   let movieId = sessionStorage.getItem('movieId');
 
-  axios.get('http://www.omdbapi.com/?apikey=6c1b77b8&i='+movieId+'&plot=full')
+  axios.get('http://www.omdbapi.com/?apikey=6c1b77b8&i=' + movieId + '&plot=full')
     .then((response) => {
       console.log(response);
       let movie = response.data;
 
-      let output =`
+      let output = `
         <div class="row">
           <div class="col-md-4">
             <img src="${movie.Poster}" class="thumbnail">

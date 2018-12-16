@@ -7,14 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="../css/our_css_layout.css">
-  <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
-  <link rel="stylesheet" href="../css/genre_pages_formats.css">
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 
-  <title>Action</title>
+  <!--star  -->
+
+  <title>Movie Review Top 10</title>
 </head>
+<link rel="stylesheet" href="../css/our_css_layout.css">
+<link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16" />
 
 <body>
 
@@ -32,17 +33,17 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="../homepage.html">Home</a></li>
+          <li><a href="../homepage.html">Home</a></li>
           <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="../genre.html">Genres <span class="caret"></span></a>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Genres <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="genre_romance.html">Romance</a></li>
-              <li><a href="genre_action.html">Action</a></li>
-              <li><a href="genre_sci-fi.html">Sci-Fi</a></li>
-              <li><a href="../genre.html">Saliya's Genre Page</a></li>
+              <li><a href="../pages/genre_romance.html">Romance</a></li>
+              <li><a href="../pages/genre_action.html">Action</a></li>
+              <li><a href="../pages/genre_sci-fi.html">Sci-Fi</a></li>
+              <li><a href="../genre.html">Thriller</a></li>
             </ul>
           </li>
-          <li><a href="top10.html">Top 10</a></li>
+          <li class="active"><a href="top10.html">Top 10</a></li>
         </ul>
         <!-- <ul class="nav navbar-nav navbar-right">
               <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -81,54 +82,34 @@
 
 
       </div>
-
     </div>
-
   </nav>
 
 
-  <p id="genreHeader">
-    <b>Home</b>
-  </p>
 
+  <div class="container">
+    	<div class="jumbotron">
+	    	<h3 class="text-center">Search For Any Movie</h3>
+	    	<form id="searchForm">
+	    		<input type="text" class="form-control" id="searchText" placeholder="Search Movies...">
+	    	</form>
+	    </div>
+    </div>
 
-    <!-- <div class="container">
-      	<div class="jumbotron">
-  	    	<h3 class="text-center">Search For Any Movie</h3>
-  	    	<form id="searchForm">
-  	    		<input type="text" class="form-control" id="searchText" placeholder="Search Movies...">
-  	    	</form>
-  	    </div>
-      </div> -->
+    <div class="container" style="background-color:rgba(0, 0, 0, 0);">
+        <div id="movies" class="row"></div>
+      </div>
 
-      <div class="container" style="background-color:rgba(0, 0, 0, 0);">
-          <div id="movies" class="row"></div>
-        </div>
-
-        <script
-      src="https://code.jquery.com/jquery-3.1.1.min.js"
-      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous"></script>
-      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-      <script src="../js/genre.js"></script>
-      </body>
-
+      <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/search.js"></script>
+    </body>
 
 
 
 </body>
-<footer>
-    <div class="footcontainer">
-      <div class="">
-        <a href="#">Contact us
-      </div>
-      <div class="">
-        <a href="#">About us
-      </div>
-      <div class="">
-        <a href="#">Movies and more
-      </div>
-    </div>
-    </footer>
 
 </html>

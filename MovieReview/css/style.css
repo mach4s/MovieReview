@@ -12,6 +12,22 @@ body{
 
 }
 
+
+#movies img, #movie img{
+  width:100%;
+}
+
+@media(min-width:960px){
+  #movies .col-md-3 .well{
+    height: 390px;
+  }
+
+  #movies .col-md-3 img{
+    height:240px;
+  }
+}
+
+
 .bgimg {
 
   background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../img/moviebg2.png);
@@ -90,6 +106,14 @@ body{
   border-color: grey;
 }
 
+.container-search {
+  padding: 10px;
+  width: 80%;
+  text-align: left;
+  background-color: black;
+  margin: 10px;
+  border-color: grey;
+}
 
 
 
